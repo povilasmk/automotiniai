@@ -16,25 +16,10 @@ class Automorph
     (number ** 2).to_s.split('').last(size).join.to_i == number
   end
 
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  def size
+    number.to_s.size
+  end
 
 end
+
+#puts Automorph.new(5).valid?
